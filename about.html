@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+      <div class="logo"><img src="img/zwk.png" alt="logo" style="width: 16%; position: relative; top: 8px; right: 44px;">
+        <i style="font-size: 27px; position: relative; right: 50px; bottom: 24px; font-weight: 600;">ZeroWaste</i> <b style="color: #06C167; position: relative; bottom: 24px; right: 55px; font-size: 30px;">Kitchen</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="#about" class="active" >About</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="profile.php" >Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger=document.querySelector(".hamburger");
+        hamburger.onclick =function(){
+            navBar=document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <style>
+       
+        
+        .coverc{
+          width: 100%;
+          height: 400px;
+          background:url('img/about3.jpg')no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items:center;
+    padding-top: 8rem;
+ 
+        } 
+        .title{
+          font-size: 38px;
+          text-align: center;
+          align-items: center; 
+        }
+       
+        .para p{
+            font-size: 23px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+          @media (max-width: 767px) {
+            .para p{
+               font-size: 16px;
+               /* margin-left: 10px; */
+              }
+            #pptslide{
+                height: 200px;
+                width: 300px;
+
+            }
+            #map{
+              height: 200px;
+                width: 300px;
+
+
+            }
+            #overview{
+              height: 200px;
+                width: 300px;
+            }
+            
+        .title{
+          font-size: 28px;
+          margin: 10px;
+          text-align: center;
+          align-items: center; 
+        }
+       
+
+          }
+     
+    </style>
+    <br>
+    <br>
+    
+    <p class="title">"Welcome to <u> ZeroWasteKitchen</u> "</p>
+    <br>
+    <br>
+    <br>
+        <p class="heading">About us</p>
+      <div class="para">
+      
+        <p>We are a team of passionate individuals committed to addressing the issue of food waste in India.Our goal is to Establish a network of food donors, such as restaurants, grocery stores, and farms, that regularly have surplus food.</p>
+      </div>
+      <br>
+ 
+      
+    
+      <br>
+      
+
+
+<div class="map"  style="  text-align: center; padding-bottom: 50px;" >
+<p  style=" font-size:30px ;" > Location  </p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.117461971205!2d86.43867407389494!3d23.8144217863182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bc9fac678481%3A0x122cb1d133a89995!2sIndian%20Institute%20of%20Technology%20(Indian%20School%20of%20Mines)%2C%20Dhanbad!5e0!3m2!1sen!2sin!4v1715376300929!5m2!1sen!2sin" width="710" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+</body>
+</html>
