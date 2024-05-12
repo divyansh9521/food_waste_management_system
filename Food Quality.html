@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Quality Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Food Quality Test</h2>
+    <form id="foodForm" action="submit.php" method="post">
+        <label for="foodName">Food Name:</label>
+        <input type="text" id="foodName" name="foodName" required>
+        <label for="quality">Quality:</label>
+        <select id="quality" name="quality" required>
+            <option value="">Select</option>
+            <option value="Good">Good</option>
+            <option value="Average">Average</option>
+            <option value="Poor">Poor</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

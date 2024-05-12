@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="contact1.css">
+	 
+
+</head>
+
+
+<body>
+	<header>
+    <div class="logo"><img src="img/zwk.png" alt="logo" style="width: 16%; position: relative; top: 8px; right: 44px;">
+      <i style="font-size: 27px; position: relative; right: 50px; bottom: 24px; font-weight: 600;">ZeroWaste</i> <b style="color: #06C167; position: relative; bottom: 24px; right: 55px; font-size: 30px;">Kitchen</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li> <a href="contact.html" class="active">Contact</a> </li>
+                <li><a href="profile.php" >Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger=document.querySelector(".hamburger");
+        hamburger.onclick =function(){
+            navBar=document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <section class="cover" >
+        
+    </section>
+	<p class="heading" style=" margin: 20px; ">contact us </p>
+    
+     
+	
+   <!-- <h1 class="heading">Contact Us</h1>  -->
+   
+   <div class="contact-info" style="padding: 10px;"> 
+    <p>Email: ZeroWasteKitchen@gmail.com</p> 
+    <p>Phone: (+91) 7908386095</p> 
+    <p>Address: IIT(ISM) Dhanbad</p>
+    <b style="text-align: center;position: relative; left: 80px;top: 25px; font-size:40px ;">Feedback Form</b>
+    <a style="position: relative; right: 150px; top: 80px; font-size:30px ;" href="https://forms.gle/N8fputPe9jQTnYXZ7"><input type="submit" value="Send Feedback"></a> 
+   </div> 
+ 
+    
+</body>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {  
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</html>
